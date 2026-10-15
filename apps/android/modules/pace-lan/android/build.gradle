@@ -6,7 +6,11 @@ version = '1.0.0'
 
 android {
   namespace "expo.modules.pacelan"
-  defaultConfig { minSdkVersion 29 }
+  defaultConfig {
+    minSdkVersion 29
+    versionCode 1
+    versionName "1.0.0"
+  }
 }
 
 dependencies {
