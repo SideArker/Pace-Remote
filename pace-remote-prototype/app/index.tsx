@@ -1,8 +1,8 @@
 import { useLocalSearchParams, router } from 'expo-router';
 import {
-  ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Bot, Check, CheckCircle2,
-  ChevronDown, Circle, Clock3, Code2, FileCode2, GitBranch, ListTodo,
-  MessageSquareText, MoreHorizontal, Paperclip, Plus, Send, ShieldCheck,
+  ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Bot, Check, Clock3, Code2,
+  FileCode2, GitBranch, ListTodo, MessageSquareText, MoreHorizontal,
+  Paperclip, Plus, ShieldCheck,
   Terminal, Wifi, X, Zap,
 } from 'lucide-react-native';
 import { useState } from 'react';
