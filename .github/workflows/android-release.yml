@@ -52,10 +52,26 @@ jobs:
           packages: platform-tools
 
       - name: Install Android SDK packages
-        run: sdkmanager 'platforms;android-36' "build-tools;$BUILD_TOOLS_VERSION" 'ndk;27.1.12297006'
+        run: |
+          for attempt in 1 2 3; do
+            if sdkmanager 'platforms;android-36' "build-tools;$BUILD_TOOLS_VERSION" 'ndk;27.1.12297006'; then
+              exit 0
+            fi
+            echo "Android SDK download attempt $attempt failed."
+            sleep 10
+          done
+          exit 1
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          for attempt in 1 2 3; do
+            if npm ci; then
+              exit 0
+            fi
+            echo "npm install attempt $attempt failed."
+            sleep 10
+          done
+          exit 1
 
       - name: Check application
         run: |
