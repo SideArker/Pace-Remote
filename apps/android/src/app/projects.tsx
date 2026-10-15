@@ -21,7 +21,7 @@ export default function ProjectsScreen() {
       setProjects(items); await saveProjects(items); setStatus('Connected to Pace host');
     } catch (error) { const cached = await readProjects(); setProjects(cached); setStatus(error instanceof Error ? error.message : 'Host unavailable. Cached projects shown.'); }
   }, []);
-  useEffect(() => { void refresh(); }, [refresh]);
+  useEffect(() => { const timer = setTimeout(() => { void refresh(); }, 0); return () => clearTimeout(timer); }, [refresh]);
   const newSession = async (project: Project) => {
     try {
       const session = await remoteClient().call<'sessions.create', { id: string }>('sessions.create', { projectId: project.id, kind: 'normal' });

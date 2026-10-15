@@ -13,7 +13,7 @@ export const common = StyleSheet.create({
   screen: { flex: 1, backgroundColor: colors.background },
   content: { padding: space.lg, gap: space.md, paddingBottom: space.xxl },
   title: { color: colors.text, fontSize: textSize.heading, fontWeight: '700' },
-  heading: { color: colors.text, fontSize: textSize.title, fontWeight: '650' },
+  heading: { color: colors.text, fontSize: textSize.title, fontWeight: '600' },
   body: { color: colors.text, fontSize: textSize.body, lineHeight: 23 },
   muted: { color: colors.muted, fontSize: textSize.caption, lineHeight: 18 },
   card: { backgroundColor: colors.surface, borderColor: colors.border, borderWidth: 1, borderRadius: radius.md, padding: space.lg, gap: space.sm },

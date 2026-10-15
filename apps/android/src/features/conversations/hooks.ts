@@ -25,8 +25,8 @@ export function useSnapshot(projectId: string, sessionId: string) {
     const client = remoteClient();
     const unsubscribe = client.onChanged(event => { if (event.projectId === projectId && event.sessionId === sessionId) void refresh(); });
     const state = AppState.addEventListener('change', next => { if (next === 'active') void refresh(); });
-    void refresh();
-    return () => { active = false; unsubscribe(); state.remove(); };
+    const timer = setTimeout(() => { void refresh(); }, 0);
+    return () => { active = false; clearTimeout(timer); unsubscribe(); state.remove(); };
   }, [projectId, sessionId, refresh]);
   return { snapshot, loading, error, refresh };
 }
