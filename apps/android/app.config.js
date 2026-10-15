@@ -3,7 +3,6 @@ module.exports = ({ config }) => ({
   android: { ...config.android, minSdkVersion: 29, usesCleartextTraffic: false },
   plugins: [
     ...(config.plugins || []),
-    ['./modules/pace-lan'],
     ['expo-secure-store', { configureAndroidBackup: false }],
     ['expo-build-properties', { android: { minSdkVersion: 29, usesCleartextTraffic: false } }],
   ],
