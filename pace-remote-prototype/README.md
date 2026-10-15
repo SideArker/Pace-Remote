@@ -6,6 +6,8 @@ Throwaway Expo mock to compare three mobile layouts for the same agent session:
 - `?variant=task` — task status, plan, and pending approval first.
 - `?variant=sections` — switchable conversation, plan, and diff sections.
 
+For the original design context, user decisions, implementation map, and next steps, read [DESIGN-HANDOFF.md](./DESIGN-HANDOFF.md). Screenshot status and capture guidance are in [docs/SCREENSHOTS.md](./docs/SCREENSHOTS.md).
+
 All variants use a calm graphite dark theme, balanced information density, and restrained semantic color. Pace's actual brand palette is not in this repository, so the muted teal, green, amber, and red here are placeholders to discuss—not approved brand tokens.
 
 ## Run
