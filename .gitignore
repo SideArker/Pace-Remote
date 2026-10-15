@@ -6,3 +6,6 @@ apps/android/android/
 apps/android/ios/
 *.apk
 *.aab
+*.jks
+*.keystore
+*.p12
