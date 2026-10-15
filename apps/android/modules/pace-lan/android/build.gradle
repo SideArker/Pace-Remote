@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+apply plugin: 'expo-module-gradle-plugin'
+
+group = 'expo.modules.pacelan'
+version = '1.0.0'
+
+android {
+  namespace "expo.modules.pacelan"
+  defaultConfig { minSdkVersion 29 }
+}
+
+dependencies {
+  implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+}
