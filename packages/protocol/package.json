@@ -1,0 +1,8 @@
+{
+  "name": "@pace-remote/protocol",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "dependencies": { "zod": "^4.1.0" }
+}

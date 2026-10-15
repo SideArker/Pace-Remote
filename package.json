@@ -1,0 +1,13 @@
+{
+  "name": "pace-remote",
+  "private": true,
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspace @pace-remote/android",
+    "android": "npm run android --workspace @pace-remote/android",
+    "build:android": "npm run build:android --workspace @pace-remote/android"
+  },
+  "devDependencies": { "vitest": "^5.0.1", "typescript": "~6.0.3", "@types/node": "^24.0.0" }
+}

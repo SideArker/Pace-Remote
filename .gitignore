@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+dist/
+*.tsbuildinfo
+apps/android/android/
+apps/android/ios/
+*.apk
+*.aab
