@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { pairingSchema, type Pairing, type Project } from '@pace-remote/protocol';
 import { Button, Card, Label } from '../components/ui/Primitives';
 import { common, colors, radius, space } from '../theme/tokens';
-import { discoverHosts, pairHost, remoteClient, stopDiscoveringHosts } from '../services/remote/client';
+import { discoverHosts, pairHost, stopDiscoveringHosts } from '../services/remote/client';
 import { PaceLan } from '../services/native/PaceLan';
 
 export default function PairingScreen() {
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   brand: { flexDirection: 'row', alignItems: 'center', gap: space.md, marginBottom: space.sm },
   mark: { width: 44, height: 44, borderRadius: radius.md, backgroundColor: colors.accent, justifyContent: 'center', alignItems: 'center' },
   markText: { color: colors.background, fontSize: 22, fontWeight: '800' },
-  wordmark: { color: colors.text, fontSize: 22, fontWeight: '750' },
+  wordmark: { color: colors.text, fontSize: 22, fontWeight: '700' },
   code: { minHeight: 78, textAlignVertical: 'top' },
   section: { paddingTop: space.md, gap: space.xs },
   footer: { textAlign: 'center', paddingHorizontal: space.lg, paddingVertical: space.lg },
