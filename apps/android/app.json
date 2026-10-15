@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Pace Remote",
+    "slug": "pace-remote",
+    "scheme": "pace-remote",
+    "version": "1.0.0",
+    "platforms": ["android"],
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "package": "dev.pace.remote",
+      "permissions": ["android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "android.permission.ACCESS_WIFI_STATE", "android.permission.CHANGE_WIFI_MULTICAST_STATE"],
+      "allowBackup": false
+    },
+    "plugins": ["expo-router", ["expo-build-properties", { "android": { "minSdkVersion": 29, "usesCleartextTraffic": false } }]],
+    "experiments": { "typedRoutes": true }
+  }
+}
